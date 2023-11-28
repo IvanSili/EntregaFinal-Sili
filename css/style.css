@@ -1,0 +1,297 @@
+/*---------------configuracion general---------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*--------------------HEADER--------------------*/
+
+header {
+    background-color: #216869;
+    height: 130px;
+    /* position: sticky;
+    top: 0; */
+}
+
+/* Logo empresa*/
+
+
+header img {
+    width: 130px;
+    border-radius: 50%; 
+    border-style:solid;
+    border-width: 5px;
+    border-color: #1F2421;
+    margin-left: 50px;
+}
+
+/*Botones del nav*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 0;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #dce1de;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/*Menu desplegable*/
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+}
+
+header nav ul ul {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    width: 170%;
+    border-radius: 8px;
+    overflow: auto;
+
+}
+
+header nav ul ul li {
+    display: block;
+
+}
+
+header nav ul li:hover ul {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    background-color: #1F2421;
+
+}
+
+header nav ul li a:hover {
+    transition: all .3s;
+    color:#9cc5a1;
+    text-shadow: 3px 8px 10px #1F2421;
+}
+
+header nav ul li ul li a{
+    display: block;
+    padding: 5px;
+    font-size: 17px
+}
+
+
+
+/* --------------------MAIN-------------------- */
+
+/*Color del main*/
+main {
+    background-color: #9cc5a1;
+    padding-bottom: 40px;
+}  
+
+/*Configuracion de titulos principales*/
+main h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+}
+
+/*Configuracion de los articulos*/
+main section article {
+    background-color: #dce1dec6;
+    width: 400px;
+    height: 600px;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+/*Ubicaciones de los articulos*/
+main section {
+    display: flex;
+    column-gap: 10px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/*Imagenes dentro de los articulos*/
+main section article img {
+    width: 100%;
+    height: 350px;
+    padding: 15px;
+    border-radius: 35px;
+}
+
+/*Codigo para centrar y mover texto*/
+main section article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+}
+
+/*Fuente de textos de articulos*/
+main section article h2 {font-family: 'Poppins', sans-serif;}
+main section article h3 {font-family: 'Poppins', sans-serif;}
+main section article p  {font-family: 'Roboto', sans-serif;}
+main div p {font-family: 'Roboto', sans-serif;}
+
+
+
+/*--------------------FOOTER--------------------*/
+
+/*color del footer*/
+
+footer {
+    background-color: #216869;
+}
+
+/*Fuentes del footer*/
+footer h1 {font-family: 'Poppins', sans-serif;}
+footer h2 {font-family: 'Poppins', sans-serif;}
+footer h3 {font-family: 'Poppins', sans-serif;}
+footer h4 {font-family: 'Poppins', sans-serif;}
+footer p {font-family: 'Roboto', sans-serif;}
+
+/*Clase del icono de whatsapp fijo*/
+.icono-whatsapp {
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+/*Tamaño de imagenes dentro del footer*/
+footer div img {
+    width: 50px;
+    height: 50px;
+}
+
+.imagenes-sociales {
+    width: 70px;
+    height: 70px;
+}
+
+/*Logo empresa del footer*/
+.logo-empresa-footer {
+    width: 120px;
+    border-radius: 50%; 
+    border-style:solid;
+    border-width: 5px;
+    border-color: #1F2421;
+    margin: 15px;
+}
+
+/*Ubicacion de objetos dentro del footer*/
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.ubicacion-imagenes-footer {
+    display: grid;
+    width: 200px;
+    height: 200px;
+    justify-items: center;
+    align-items: center;
+}
+
+.ubicacion-imagenes-footer .redes-sociales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 50px;
+}
+
+.ubicacion-imagenes-footer .medios-de-pago {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.informacion-footer {
+    display: grid;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+/*--------------------RESPONSIVE--------------------*/
+
+@media (max-width:740px) {
+/*HEADER PARA MENOS DE 740PX*/
+
+header img {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    left: 15px;
+}
+
+header nav ul li a{
+    font-size: 100%;
+}
+
+header{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*MAIN PARA MENOS DE 740PX*/
+
+
+/*FOOTER PARA MENOS DE 740PX*/
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+}
+footer div {
+    align-items: center;
+    justify-items: center;
+}
+
+.logo-empresa-footer {
+    display: none;
+}
+
+}
+
+@media (max-width:530px) {
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header nav ul {
+        display: grid;
+        justify-items: end;
+        align-items:end; 
+    }
+
+    header nav ul ul{
+        width: 60%;
+    }
+}
+
