@@ -6,21 +6,15 @@
     box-sizing: border-box;
 }
 
+/*----------------HEADER CON BOOTSTRAP----------------*/
 
-
-/*--------------------HEADER--------------------*/
-
-header {
+.color-header {
     background-color: #216869;
-    height: 130px;
-    /* position: sticky;
-    top: 0; */
 }
 
 /* Logo empresa*/
 
-
-header img {
+.logo-empresa-header {
     width: 130px;
     border-radius: 50%; 
     border-style:solid;
@@ -29,74 +23,30 @@ header img {
     margin-left: 50px;
 }
 
-/*Botones del nav*/
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
+/*botones del nav*/
+
+.menu-derecha {
+    flex-grow: 0;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    font-size: 0;
-}
+/*Textos*/
 
-header nav ul li a{
-    text-decoration: none;
-    color: #dce1de;
-    font-family: 'Poppins', sans-serif;
+.menu-ul li a {
+    color: #f8f9fa;
     font-size: 20px;
-    margin: 10px;
 }
 
-/*Menu desplegable*/
-
-header nav ul li {
-    display: inline-block;
-    position: relative;
-    font-size: 15px;
-}
-
-header nav ul ul {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s;
-    width: 170%;
-    border-radius: 8px;
-    overflow: auto;
-
-}
-
-header nav ul ul li {
-    display: block;
-
-}
-
-header nav ul li:hover ul {
-    display: block;
-    visibility: visible;
-    opacity: 1;
+.fondo-negro {
     background-color: #1F2421;
-
 }
 
-header nav ul li a:hover {
-    transition: all .3s;
-    color:#9cc5a1;
-    text-shadow: 3px 8px 10px #1F2421;
+.boton-menu {
+    border: none;
 }
 
-header nav ul li ul li a{
-    display: block;
-    padding: 5px;
-    font-size: 17px
+.boton-menu:focus {
+    box-shadow: none;
 }
-
-
-
 /* --------------------MAIN-------------------- */
 
 /*Color del main*/
@@ -149,13 +99,87 @@ main section article div {
 }
 
 /*Fuente de textos de articulos*/
-main section article h2 {font-family: 'Poppins', sans-serif;}
+main section article div h2 {font-family: 'Poppins', sans-serif;}
+main section article h2 {font-family: 'Poppins', sans-serif ;}
+main section article div h3 {font-family: 'Poppins', sans-serif;}
 main section article h3 {font-family: 'Poppins', sans-serif;}
+main section article div p  {font-family: 'Roboto', sans-serif;}
 main section article p  {font-family: 'Roboto', sans-serif;}
 main div p {font-family: 'Roboto', sans-serif;}
 
+/*---------------Main Contacto----------------*/
 
+.main-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 10px;
+}
 
+.contacto-informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+.contacto-informacion img {
+    width: 40px;
+    height: 40px;
+}
+
+.contacto-cards {
+    display: flex;
+    justify-content: center;
+    align-content: end;
+
+}
+
+.contacto-formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: start;
+    justify-content: center;
+}
+
+/*---------------Main nosotros---------------*/
+
+.main-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.main-nosotros img {
+    margin: 15px;
+    margin-top: 40px;
+    border: solid 5px #1F2421;
+    width: 600px;
+    height: 400px;
+}
+
+.nosotros-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 15px;
+}
+
+.nosotros-texto h1 {
+    padding: 0;
+    margin: 20px;
+    margin-left: 0;
+}
+
+/*Clase del icono de whatsapp fijo*/
+.icono-whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+}
 /*--------------------FOOTER--------------------*/
 
 /*color del footer*/
@@ -170,14 +194,6 @@ footer h2 {font-family: 'Poppins', sans-serif;}
 footer h3 {font-family: 'Poppins', sans-serif;}
 footer h4 {font-family: 'Poppins', sans-serif;}
 footer p {font-family: 'Roboto', sans-serif;}
-
-/*Clase del icono de whatsapp fijo*/
-.icono-whatsapp {
-    width: 50px;
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-}
 
 /*Tamaño de imagenes dentro del footer*/
 footer div img {
@@ -204,9 +220,15 @@ footer div img {
 
 footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     justify-items: center;
     align-items: center;
+    font-size: 15px;
+}
+
+footer h3 {
+    font-size: 20px;
 }
 
 
@@ -238,30 +260,67 @@ footer {
 
 /*--------------------RESPONSIVE--------------------*/
 
-@media (max-width:740px) {
-/*HEADER PARA MENOS DE 740PX*/
 
-header img {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    left: 15px;
-}
 
-header nav ul li a{
-    font-size: 100%;
-}
+@media (max-width:992px) {
 
-header{
-    padding: 10px;
+/*Header*/
+
+    header nav ul li a {
+        text-align: center;
+    }
+    header nav ul ul li{
+        text-align: center;
+    }
+/*Html contacto*/
+    .main-contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+/*Html Nosotros*/
+
+.main-nosotros {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
 }
 
-/*MAIN PARA MENOS DE 740PX*/
+.main-nosotros img {
+    margin-top: 20px;
+}
+
+}
+
+@media (max-width:768px) {
+
+/*MAIN PARA MENOS DE 768PX*/
+
+main section article {
+    margin: 15px;
+}
+
+/*html nosotros*/
+
+.main-nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px auto;
+}
 
 
-/*FOOTER PARA MENOS DE 740PX*/
+.main-nosotros img{
+    width: 90%;
+    height: auto;
+    margin-top: 5px;
+
+}
+
+
+/*FOOTER PARA MENOS DE 768PX*/
 footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -276,22 +335,5 @@ footer div {
     display: none;
 }
 
-}
-
-@media (max-width:530px) {
-    header {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    header nav ul {
-        display: grid;
-        justify-items: end;
-        align-items:end; 
-    }
-
-    header nav ul ul{
-        width: 60%;
-    }
 }
 

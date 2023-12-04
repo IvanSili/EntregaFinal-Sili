@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sillones DyS</title>
     <meta name="keywords" content="sillones,muebles,decoracion,sillas,respaldos,fletes,mesas,mesitas,espejos,confortable"> 
     <meta name="description" content="Dys es una casa de venta de sillones atendida por sus propios dueños donde brindamos acesoracion personalizada y buscamos resolver problemas en cuanto al diseño, confort y traslado de muebles. Fabricamos desde 2013 sillones y muebles para la ciudad de mar del plata y alrededores. A demas,con el pasar del tiempo hemos incorporado la venta de objetos decorativos para el hogar. Contamos con muy buenas calificaciones y nos enfocamos en cumplir siempre lo pactado con el cliente">
     <meta name="author" content="Matias Ivan Sili">
+    <title>Sillones DyS</title>
     <!--link logo-->
     <link rel="icon" href="../media/logoDys.ico">
+    <!--Link de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Link css-->
     <link rel="stylesheet" href="../css/style.css">
     <!--Link Font-->
@@ -18,75 +20,115 @@
 </head>
 <body>
     <header>
-        <a href="../index.html"> <img src="../media/logoDys.ico" alt="logo de la pagina dys" title="Inicio" class="logo-empresa"></a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Productos</a>
-                    <ul>
-                        <li><a href="sillonesGrandes.html">Sillones Grandes</a></li>
-                        <li><a href="sillonesPequeños.html">Sillones Pequeños</a></li>
-                        <li><a href="sillonesIndividuales.html">Sillones Individuales</a></li>
-                        <li><a href="otros.html">Otros</a></li>
-                    </ul>
-                </li>
-                <li><a href="contacto.html">Contactanos</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg color-header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../media/logoDys.ico" alt="LogoDys" class="logo-empresa-header"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse menu-derecha" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-ul">
+                        <li class="nav-item">
+                            <a class="nav-link texto-blanco" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                        </a>
+                        <ul class="dropdown-menu fondo-negro">
+                            <li><a class="dropdown-item" href="./sillonesGrandes.html">Sillones Grandes</a></li>
+                            <li><a class="dropdown-item" href="./sillonesPequeños.html">Sillones Pequeños</a></li>
+                            <li><a class="dropdown-item" href="./sillonesIndividuales.html">Sillones Individuales</a></li>
+                            <li><a class="dropdown-item" href="./otros.html">Otros</a></li>
+                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+            </div>
+            </div>
         </nav>
     </header>
     <main>
-        <H1>Sillones dos cuerpos</H1>
+            <H1>Sillones dos cuerpos</H1>
         <section>
-            <article>
-                    <h2>Sillon Novo</h2>
-                    <h3>Medidas:</h3>
-                    <p><b>Ancho:</b> 1.60 centimetros <b>Profundidad:</b> 90 centimetros <b>Altura:</b> 75 centimetros</p>
-                    <h3>Precio: $</h3>
-            </article>
-            <article>
-                    <h2>Sillon Novo</h2>
-                    <h3>Medidas:</h3>
-                    <p><b>Ancho:</b> 1.80 centimetros <b>Profundidad:</b> 90 centimetros <b>Altura:</b> 75 centimetros</p>
-                    <h3>Precio: $</h3>
-            </article>
-            <article>
-                    <h2>Sillon Italiano</h2>
-                    <h3>Medidas:</h3>
-                    <p><b>Ancho:</b> 1.80 centimetros <b>Profundidad:</b> 90 centimetros <b>Altura:</b> 75 centimetros</p>
-                    <h3>Precio: $</h3>
-            </article>
-            <article>
-                    <h2>Sillon Italiano con camastro</h2>
-                    <h3>Medidas:</h3>
-                    <p><b>Ancho:</b> 1.80 centimetros <b>Largo:</b> 1.70 centimetros <b>Profundidad:</b> 90 centimetros <b>Altura:</b> 75 centimetros</p>
-                    <h3>Precio: $</h3>
-            </article>       
-            <article>
-                    <h2>Sillon Paris</h2>
-                    <h3>Medidas:</h3>
-                    <p><b>Ancho:</b> 1.60 centimetros <b>Profundidad:</b> 90 centimetros <b>Altura:</b> 75 centimetros</p>
-                    <h3>Precio: $</h3>
-            </article>
-            <article>
-                    <h2>Sillon Paris</h2>
-                    <h3>Medidas:</h3>
-                    <p><b>Ancho:</b> 1.80 centimetros <b>Profundidad:</b> 90 centimetros <b>Altura:</b> 75 centimetros</p>
-                    <h3>Precio: $</h3>
-            </article>
-            <article>
-                    <h2>Sillon Cama</h2>
-                    <h3>Medidas:</h3>
-                    <p><b>Ancho:</b> 1.80 centimetros <b>Largo:</b> 90 centimetros <b>Profundidad:</b> 90 centimetros <b>Altura:</b> 75  centimetros <b>Tamaño de cama:</b> 1.30 centimetros x 1.90 centimetros </p>
-                    <h3>Precio: $</h3>
-            </article>
-            <article>
-                    <h2>Sillon Botones</h2>
-                    <h3>Medidas:</h3>
-                    <p><b>Ancho:</b> 1.55 centimetros <b>Profundidad:</b> 75 centimetros <b>Altura:</b> 75 centimetros</p>
-                    <h3>Precio: $</h3>
-            </article>
+                <article>
+                        <img src="../media/sillonesF/novo160-2.PNG" alt="SillonNovo160">
+                            <div>
+                                <h2>Sillon Novo</h2>
+                                <h3>Medidas:</h3>
+                                <p><b>Ancho:</b> 1.60 centimetros <br> <b>Profundidad:</b> 90 centimetros <br> <b>Altura:</b> 75 centimetros</p>
+                                <h3>Precio: $</h3>
+                            </div>
+                </article>
+                <article>
+                        <img src="../media/sillonesF/novo180.PNG" alt="SillonNovo180">
+                            <div>
+                                <h2>Sillon Novo</h2>
+                                <h3>Medidas:</h3>
+                                <p><b>Ancho:</b> 1.80 centimetros <br> <b>Profundidad:</b> 90 centimetros <br> <b>Altura:</b> 75 centimetros</p>
+                                <h3>Precio: $</h3>
+                            </div>
+                </article>
+                <article>
+                        <img src="../media/sillonesF/italiano180-2.PNG" alt="SillonItaliano180">
+                            <div>
+                                <h2>Sillon Italiano</h2>
+                                <h3>Medidas:</h3>
+                                <p><b>Ancho:</b> 1.80 centimetros <br> <b>Profundidad:</b> 90 centimetros <br> <b>Altura:</b> 75 centimetros</p>
+                                <h3>Precio: $</h3>
+                            </div>
+                </article>
+                <article>
+                        <img src="../media/sillonesF/italianoCamastro.PNG" alt="italianoConCamastro">
+                            <div>
+                                <h2>Sillon Italiano con camastro</h2>
+                                <h3>Medidas:</h3>
+                                <p><b>Ancho:</b> 1.80 centimetros <br> <b>Largo:</b> 1.70 centimetros <br> <b>Profundidad:</b> 90 centimetros <br> <b>Altura:</b> 75 centimetros</p>
+                                <h3>Precio: $</h3>
+                            </div>
+                </article>       
+                <article>
+                        <img src="../media/sillonesF/paris160-3.PNG" alt="SillonParis">
+                            <div>
+                                <h2>Sillon Paris</h2>
+                                <h3>Medidas:</h3>
+                                <p><b>Ancho:</b> 1.60 centimetros <br> <b>Profundidad:</b> 90 centimetros <br> <b>Altura:</b> 75 centimetros</p>
+                                <h3>Precio: $</h3>
+                            </div>
+                </article>
+                <article>
+                        <img src="../media/sillonesF/paris180.PNG" alt="SillonParis180">
+                            <div>
+                                <h2>Sillon Paris</h2>
+                                <h3>Medidas:</h3>
+                                <p><b>Ancho:</b> 1.80 centimetros <br> <b>Profundidad:</b> 90 centimetros <br> <b>Altura:</b> 75 centimetros</p>
+                                <h3>Precio: $</h3>
+                            </div>
+                </article>
+                <article>
+                        <img src="../media/sillonesF/sillonCama.PNG" alt="SillonCama">
+                            <div>
+                                <h2>Sillon Cama</h2>
+                                <h3>Medidas:</h3>
+                                <p><b>Ancho:</b> 1.80 centimetros <br> <b>Largo:</b> 90 centimetros <br> <b>Profundidad:</b> 90 centimetros <br> <b>Altura:</b> 75  centimetros <br> <b>Tamaño de cama:</b> <br> 1.30 centimetros x 1.90 centimetros </p>
+                                <h3>Precio: $</h3>
+                            </div>
+                </article>
+                <article>
+                        <img src="../media/sillonesF/sillonBotones.PNG" alt="SillonBotones">
+                            <div>
+                                <h2>Sillon Botones</h2>
+                                <h3>Medidas:</h3>
+                                <p><b>Ancho:</b> 1.55 centimetros <br> <b>Profundidad:</b> 75 centimetros <br> <b>Altura:</b> 75 centimetros</p>
+                                <h3>Precio: $</h3>
+                            </div>
+                </article>
         </section>
+                    <!--Link de Bootstrap JS-->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </main>
     <footer>
         <div class="informacion-footer">
