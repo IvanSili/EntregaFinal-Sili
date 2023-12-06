@@ -299,6 +299,15 @@ footer h3 {
 
 /*MAIN PARA MENOS DE 768PX*/
 
+.logo-empresa-header {
+    width: 90px;
+}
+
+main h1 {
+    font-size: 25px;
+}
+
+
 main section article {
     margin: 15px;
 }
