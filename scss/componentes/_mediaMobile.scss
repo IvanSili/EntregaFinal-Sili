@@ -1,0 +1,59 @@
+@media (max-width:768px) {
+
+/*Tamño logo*/
+header {
+        nav {
+            div {
+                a {
+                    .logo-empresa-header{
+                        width: 90px;
+                    }
+                }
+            }
+        }
+}
+
+/*card*/
+main {
+    h1 {
+        font-size: 25px;
+    }
+    section {
+        article {
+            margin: 15px;
+            }   
+        }
+}
+
+/*html nosotros*/
+main {
+    div {
+        &.main-nosotros {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 300px auto;
+            img {
+                width: 90%;
+                height: auto;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+/*Footer*/
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    div {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+    a {.logo-empresa-footer {
+        display: none;
+    }}
+    }
+
+}

@@ -1,0 +1,61 @@
+footer {
+    background-color: #216869;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    font-size: 15px;
+    a {
+        .logo-empresa-footer{
+            width: 120px;
+            border-radius: 50%; 
+            border-style:solid;
+            border-width: 5px;
+            border-color: #1F2421;
+            margin: 15px;
+        }
+    }
+        h1 {font-family: 'Poppins', sans-serif;}
+        h2 {font-family: 'Poppins', sans-serif;}
+        h3 {font-family: 'Poppins', sans-serif;
+            font-size: 20px;}
+        h4 {font-family: 'Poppins', sans-serif;}
+        p {font-family: 'Roboto', sans-serif;}
+        div {
+            &.informacion-footer {
+                display: grid;
+                padding: 10px;
+                padding-bottom: 10px;
+            }
+            img {
+                width: 50px;
+                height: 50px;
+            }
+                &.ubicacion-imagenes-footer {
+                    display: grid;
+                    width: 200px;
+                    height: 200px;
+                    justify-items: center;
+                    align-items: center;
+                        .redes-sociales {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            height: 50px;
+                            }
+                        .medios-de-pago{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr;
+                            gap: 8px;
+                        }
+                        }
+            div {
+                a {
+                    .imagenes-sociales {
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+            }
+        }
+}

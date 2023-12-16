@@ -1,0 +1,41 @@
+main{
+    div { 
+        &.main-contacto {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    align-items: center;
+                    margin: 10px;
+                    }
+        div {
+            &.contacto-informacion {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    margin: 20px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        }
+                    }
+            div {
+                &.contacto-cards {
+                    display: flex;
+                    justify-content: center;
+                    align-content: end;
+                    }
+                }
+            }
+        div {
+            div {
+                &.contacto-formulario{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 40px;
+                    align-items: start;
+                    justify-content: center;
+                    }
+                }
+            }   
+        }
+}

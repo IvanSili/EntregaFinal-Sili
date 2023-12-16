@@ -1,0 +1,45 @@
+header {  
+        .color-header {
+        background-color: #216869;
+        }
+        nav {
+            div {
+                a { .logo-empresa-header {
+                        width: 130px;
+                        border-radius: 50%;
+                        border-style: solid;
+                        border-width: 5px;
+                        border-color: #1F2421;
+                        margin-left: 50px;
+                        }
+                    }
+                button { &.boton-menu {
+                        border: none;
+                        }
+                        &.boton-menu:focus {
+                            box-shadow: none;
+                        }
+                    }
+                div {
+                    &.menu-derecha {
+                        flex-grow: 0;
+                        }
+                    ul {
+                        &.menu-ul {
+                                li {
+                                    a {
+                                        color: #f8f9fa;
+                                        font-size: 20px;
+                                        }
+                                    }
+                                }
+                                ul {
+                                    &.fondo-negro {
+                                        background-color: #1F2421;
+                                    }
+                        }
+                        }
+                    }
+                }
+                }
+            }

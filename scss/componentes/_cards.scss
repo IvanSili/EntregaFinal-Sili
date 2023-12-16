@@ -1,0 +1,24 @@
+main{
+        section{
+                article {
+                        background-color: #dce1dec6;
+                        width: 400px;
+                        height: 600px;
+                        border-radius: 35px;
+                        overflow: hidden;
+                        img {
+                                width: 100%;
+                                height: 350px;
+                                padding: 15px;
+                                border-radius: 35px;
+                                }
+                        div {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                height: 240px;
+                                }
+                        }
+        }
+}

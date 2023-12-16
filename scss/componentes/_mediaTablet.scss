@@ -1,0 +1,45 @@
+@media (max-width:992px) {
+
+/*Header*/
+header {
+    nav {
+        ul {
+            li {
+                text-align: center;
+                a {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/*html contacto*/
+
+main {
+    div {
+        &.main-contacto {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+}
+
+/*html nosotros*/
+main {
+    div {
+        &.main-nosotros {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            align-items: center;
+            justify-content: center;
+            img {
+                margin-top: 20px;
+            }
+        }
+        
+    }
+}
+}
