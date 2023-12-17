@@ -29,13 +29,17 @@ main {
 main {
     div {
         &.main-nosotros {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 300px auto;
-            img {
-                width: 90%;
-                height: auto;
-                margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            
+            div {
+                img {
+                    display: flex;
+                    justify-content: center;
+                    width: 90%;
+                    height: auto;
+                    margin-top: 5px;
+                }
             }
         }
     }

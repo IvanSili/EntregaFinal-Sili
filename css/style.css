@@ -8,6 +8,7 @@
 
 header .color-header {
   background-color: #216869;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236f6e70' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 header nav div a .logo-empresa-header {
   width: 130px;
@@ -36,13 +37,17 @@ header nav div div ul ul.fondo-negro {
 
 main {
   background-color: #9cc5a1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23858785' fill-opacity='0.18'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   padding-bottom: 40px;
 }
 main h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
-  padding: 30px;
+  padding: 15px;
+  background-color: #1F2421;
+  color: #f8f9fa;
+  margin-bottom: 30px;
 }
 main section {
   display: flex;
@@ -74,17 +79,17 @@ main div p {
 }
 
 main .slider {
-  width: 90%;
+  width: 100%;
   height: auto;
   margin: auto;
   overflow: hidden;
+  box-shadow: 0 0 10px;
 }
 main .slider .slider-track {
   display: flex;
   animation: scroll 80s linear infinite;
   -webkit-animation: scroll 80s linear infinite;
   width: 7200px;
-  margin-top: 20px;
 }
 main .slider .slider-track .slide {
   width: 400px;
@@ -100,15 +105,21 @@ main .slider .slider-track .slide img {
   }
   100% {
     -webkit-animation: translateX(-3600px);
-    transform: translate(-4500px);
+    transform: translate(-3600px);
   }
 }
 main section article {
-  background-color: rgba(220, 225, 222, 0.7764705882);
+  background-color: rgba(220, 225, 222, 0.6039215686);
   width: 400px;
   height: 600px;
   border-radius: 35px;
   overflow: hidden;
+  box-shadow: 0 0 10px;
+  transition: all 300ms;
+  cursor: pointer;
+}
+main section article:hover {
+  transform: scale(1.05);
 }
 main section article img {
   width: 100%;
@@ -123,11 +134,16 @@ main section article div {
   align-items: center;
   height: 240px;
 }
+main section article div div {
+  padding: 10px;
+  width: 80%;
+  border-top: 2px solid rgba(0, 0, 0, 0.2862745098);
+}
 
 main a .icono-whatsapp {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   bottom: 40px;
   right: 40px;
 }
@@ -138,22 +154,22 @@ main div.main-contacto {
   align-items: center;
   margin: 10px;
 }
-main div div.contacto-informacion {
+main div.main-contacto div.contacto-informacion {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin: 20px;
 }
-main div div.contacto-informacion img {
+main div.main-contacto div.contacto-informacion img {
   width: 40px;
   height: 40px;
 }
-main div div div.contacto-cards {
+main div.main-contacto div div.contacto-cards {
   display: flex;
   justify-content: center;
   align-content: end;
 }
-main div div div.contacto-formulario {
+main div.main-contacto div div.contacto-formulario {
   display: flex;
   flex-direction: column;
   margin: 40px;
@@ -166,9 +182,8 @@ main div.main-nosotros {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
 }
-main div.main-nosotros img {
+main div.main-nosotros div img {
   margin: 15px;
-  margin-top: 40px;
   border: solid 5px #1F2421;
   width: 600px;
   height: 400px;
@@ -179,14 +194,9 @@ main div div.nosotros-texto {
   align-items: start;
   margin: 15px;
 }
-main div div.nosotros-texto h1 {
-  padding: 0;
-  margin: 20px;
-  margin-left: 0;
-}
 
 footer {
-  background-color: #216869;
+  background-color: #1F2421;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -222,6 +232,7 @@ footer div.informacion-footer {
   display: grid;
   padding: 10px;
   padding-bottom: 10px;
+  color: #f8f9fa;
 }
 footer div img {
   width: 50px;
@@ -263,16 +274,33 @@ footer div div a .imagenes-sociales {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
   }
-  /*html nosotros*/
-  main div.main-nosotros {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
+  /*boton wpp*/
+  main a .icono-whatsapp {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 40px;
   }
-  main div.main-nosotros img {
-    margin-top: 20px;
+  /*html nosotros*/
+  main h1 {
+    margin-bottom: 15px;
+  }
+  main div.main-nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  main div.main-nosotros div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main div.main-nosotros div img {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    margin-top: 5px;
   }
 }
 @media (max-width: 768px) {
@@ -289,11 +317,12 @@ footer div div a .imagenes-sociales {
   }
   /*html nosotros*/
   main div.main-nosotros {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 300px auto;
+    display: flex;
+    flex-direction: column;
   }
-  main div.main-nosotros img {
+  main div.main-nosotros div img {
+    display: flex;
+    justify-content: center;
     width: 90%;
     height: auto;
     margin-top: 5px;
@@ -305,6 +334,11 @@ footer div div a .imagenes-sociales {
     grid-template-rows: 2fr;
   }
   footer div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  footer div p {
     display: flex;
     align-items: center;
     justify-items: center;

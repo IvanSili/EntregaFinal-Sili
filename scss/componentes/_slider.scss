@@ -1,16 +1,17 @@
 main {
     .slider {
-        width: 90%;
+        width: 100%;
         height: auto;
         margin: auto;
         overflow: hidden;
+        box-shadow: 0 0 10px;
 
         .slider-track {
             display: flex;
             animation: scroll 80s linear infinite;
             -webkit-animation: scroll 80s linear infinite;
             width: calc(400px * 18);
-            margin-top: 20px;
+            
 
             .slide {
                 width: 400px;
@@ -31,7 +32,7 @@ main {
 
     100% {
         -webkit-animation: translateX(calc(-400px * 9));
-        transform: translate(calc(-500px * 9));
+        transform: translate(calc(-400px * 9));
     }
 
 }
