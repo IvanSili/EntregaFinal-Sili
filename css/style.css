@@ -6,6 +6,83 @@
   box-sizing: border-box;
 }
 
+/*Lista-colores*/
+/*FUENTES*/
+/*MIXIN*/
+/*SLIDER*/
+main .slider {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 0 10px;
+}
+main .slider .slider-track {
+  display: flex;
+  animation: scroll 80s linear infinite;
+  -webkit-animation: scroll 80s linear infinite;
+  width: 7200px;
+}
+main .slider .slider-track .slide {
+  width: 400px;
+}
+main .slider .slider-track .slide img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-animation: translateX(0);
+    transform: translate(0);
+  }
+  100% {
+    -webkit-animation: translateX(-3600px);
+    transform: translate(-3600px);
+  }
+}
+/*CARDS*/
+main section article {
+  background-color: rgba(220, 225, 222, 0.6039215686);
+  width: 400px;
+  height: 600px;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0 0 10px;
+  transition: all 300ms;
+  cursor: pointer;
+}
+main section article:hover {
+  transform: scale(1.05);
+}
+main section article img {
+  width: 100%;
+  height: 350px;
+  padding: 15px;
+  border-radius: 35px;
+}
+main section article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+}
+main section article div div {
+  padding: 10px;
+  width: 80%;
+  border-top: 2px solid rgba(0, 0, 0, 0.2862745098);
+}
+
+/*BOTON-WPP*/
+main a .icono-whatsapp {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 40px;
+}
+
+/*HEADER*/
 header .color-header {
   background-color: #216869;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236f6e70' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
@@ -30,11 +107,16 @@ header nav div div.menu-derecha {
 header nav div div ul.menu-ul li a {
   color: #f8f9fa;
   font-size: 20px;
+  font-family: "Poppins", sans-serif;
 }
 header nav div div ul ul.fondo-negro {
   background-color: #1F2421;
 }
+header nav div div ul ul.fondo-negro li a {
+  font-family: "Poppins", sans-serif;
+}
 
+/*MAIN*/
 main {
   background-color: #9cc5a1;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23858785' fill-opacity='0.18'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -78,123 +160,7 @@ main div p {
   font-family: "Roboto", sans-serif;
 }
 
-main .slider {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  overflow: hidden;
-  box-shadow: 0 0 10px;
-}
-main .slider .slider-track {
-  display: flex;
-  animation: scroll 80s linear infinite;
-  -webkit-animation: scroll 80s linear infinite;
-  width: 7200px;
-}
-main .slider .slider-track .slide {
-  width: 400px;
-}
-main .slider .slider-track .slide img {
-  width: 100%;
-}
-
-@keyframes scroll {
-  0% {
-    -webkit-animation: translateX(0);
-    transform: translate(0);
-  }
-  100% {
-    -webkit-animation: translateX(-3600px);
-    transform: translate(-3600px);
-  }
-}
-main section article {
-  background-color: rgba(220, 225, 222, 0.6039215686);
-  width: 400px;
-  height: 600px;
-  border-radius: 35px;
-  overflow: hidden;
-  box-shadow: 0 0 10px;
-  transition: all 300ms;
-  cursor: pointer;
-}
-main section article:hover {
-  transform: scale(1.05);
-}
-main section article img {
-  width: 100%;
-  height: 350px;
-  padding: 15px;
-  border-radius: 35px;
-}
-main section article div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 240px;
-}
-main section article div div {
-  padding: 10px;
-  width: 80%;
-  border-top: 2px solid rgba(0, 0, 0, 0.2862745098);
-}
-
-main a .icono-whatsapp {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  bottom: 40px;
-  right: 40px;
-}
-
-main div.main-contacto {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  margin: 10px;
-}
-main div.main-contacto div.contacto-informacion {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 20px;
-}
-main div.main-contacto div.contacto-informacion img {
-  width: 40px;
-  height: 40px;
-}
-main div.main-contacto div div.contacto-cards {
-  display: flex;
-  justify-content: center;
-  align-content: end;
-}
-main div.main-contacto div div.contacto-formulario {
-  display: flex;
-  flex-direction: column;
-  margin: 40px;
-  align-items: start;
-  justify-content: center;
-}
-
-main div.main-nosotros {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-}
-main div.main-nosotros div img {
-  margin: 15px;
-  border: solid 5px #1F2421;
-  width: 600px;
-  height: 400px;
-}
-main div div.nosotros-texto {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin: 15px;
-}
-
+/*FOOTER*/
 footer {
   background-color: #1F2421;
   display: grid;
@@ -248,11 +214,13 @@ footer div.ubicacion-imagenes-footer {
 footer div.ubicacion-imagenes-footer .redes-sociales {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: none;
   height: 50px;
 }
 footer div.ubicacion-imagenes-footer .medios-de-pago {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: none;
   gap: 8px;
 }
 footer div div a .imagenes-sociales {
@@ -260,6 +228,75 @@ footer div div a .imagenes-sociales {
   height: 70px;
 }
 
+/*MAIN-CONTACTO*/
+main div.main-contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: none;
+  align-items: center;
+  margin: 10px;
+}
+main div.main-contacto div.contacto-informacion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+}
+main div.main-contacto div.contacto-informacion img {
+  width: 40px;
+  height: 40px;
+}
+main div.main-contacto div div.contacto-cards {
+  display: flex;
+  justify-content: center;
+  align-content: end;
+}
+main div.main-contacto div div.contacto-cards p {
+  font-family: "Poppins", sans-serif;
+}
+main div.main-contacto div.boton-formulario {
+  display: flex;
+  justify-content: end;
+  margin-right: 40px;
+}
+main div.main-contacto div.boton-formulario button {
+  color: #1F2421;
+  background-color: #f8f9fa;
+  border-color: rgb(159, 159, 159);
+}
+main div.main-contacto div div.contacto-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*MAIN-NOSOTROS*/
+main div.main-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: none;
+  justify-items: center;
+}
+main div.main-nosotros div img {
+  margin: 15px;
+  border: solid 5px #1F2421;
+  width: 600px;
+  height: 400px;
+}
+main div div.nosotros-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 15px;
+}
+main div div.nosotros-texto div p {
+  font-family: "Roboto", sans-serif;
+}
+
+/*MEDIA-TABLET*/
 @media (max-width: 992px) {
   /*Header*/
   header nav ul li {
@@ -303,6 +340,7 @@ footer div div a .imagenes-sociales {
     margin-top: 5px;
   }
 }
+/*MEDIA-MOBILE*/
 @media (max-width: 768px) {
   /*Tamño logo*/
   header nav div a .logo-empresa-header {

@@ -1,6 +1,8 @@
+/*HEADER*/
+
 header {  
         .color-header {
-            background-color: #216869;
+            background-color: nth($list: $colores, $n:1);
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236f6e70' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
         }
         nav {
@@ -10,7 +12,7 @@ header {
                         border-radius: 50%;
                         border-style: solid;
                         border-width: 5px;
-                        border-color: #1F2421;
+                        border-color: nth($list: $colores, $n: 3);
                         margin-left: 50px;
                         }
                     }
@@ -29,14 +31,20 @@ header {
                         &.menu-ul {
                                 li {
                                     a {
-                                        color: #f8f9fa;
+                                        color: nth($list: $colores, $n:4);
                                         font-size: 20px;
+                                        font-family: $titulos;
                                         }
                                     }
                                 }
                                 ul {
                                     &.fondo-negro {
-                                        background-color: #1F2421;
+                                        background-color: nth($list: $colores, $n: 3);
+                                        li {
+                                            a {
+                                                font-family: $titulos;
+                                            }
+                                        }
                                     }
                         }
                         }

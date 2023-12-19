@@ -1,13 +1,14 @@
+/*MAIN-NOSOTROS*/
+
 main { 
         div {
                 &.main-nosotros {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+                    @include grid(repeat(2, 1fr), none);
                     justify-items: center;
                     div {
                         img {
                             margin: 15px;
-                            border: solid 5px #1F2421;
+                            border: solid 5px nth($list: $colores, $n: 3);
                             width: 600px;
                             height: 400px;
                         }
@@ -19,6 +20,11 @@ main {
                         flex-direction: column;
                         align-items: start;
                         margin: 15px;
+                        div {
+                            p {
+                                font-family: $parrafo;
+                            }
+                        }
                     }
                 }
             }

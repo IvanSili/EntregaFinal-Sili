@@ -1,8 +1,9 @@
+/*MAIN-CONTACTO*/
+
 main{
     div { 
         &.main-contacto {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+                    @include grid(repeat(2, 1fr), none);
                     align-items: center;
                     margin: 10px;
                     div {
@@ -21,17 +22,31 @@ main{
                                 display: flex;
                                 justify-content: center;
                                 align-content: end;
+                                p {
+                                    font-family: $titulos;
+                                }
                                 }
                             }
                         }
                     div {
+                        &.boton-formulario { 
+                            display: flex;
+                            justify-content: end;
+                            margin-right: 40px;
+                            button {
+                                color: #1F2421;
+                                background-color: #f8f9fa;
+                                border-color: rgb(159, 159, 159);
+                            }
+                        }
                         div {
                             &.contacto-formulario{
                                 display: flex;
                                 flex-direction: column;
-                                margin: 40px;
                                 align-items: start;
                                 justify-content: center;
+                                margin: 40px;
+                                font-family: $titulos;
                                 }
                             }
                         }   

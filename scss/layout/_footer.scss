@@ -1,8 +1,8 @@
+/*FOOTER*/
+
 footer {
-    background-color: #1F2421;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    background-color: nth($list: $colores, $n:3);
+    @include grid(repeat(3, 1fr), auto);
     justify-items: center;
     align-items: center;
     font-size: 15px;
@@ -12,22 +12,22 @@ footer {
             border-radius: 50%; 
             border-style:solid;
             border-width: 5px;
-            border-color: #1F2421;
+            border-color: nth($list: $colores, $n:3);
             margin: 15px;
         }
     }
-        h1 {font-family: 'Poppins', sans-serif;}
-        h2 {font-family: 'Poppins', sans-serif;}
-        h3 {font-family: 'Poppins', sans-serif;
+        h1 {font-family: $titulos;}
+        h2 {font-family: $titulos;}
+        h3 {font-family: $titulos;
             font-size: 20px;}
-        h4 {font-family: 'Poppins', sans-serif;}
-        p {font-family: 'Roboto', sans-serif;}
+        h4 {font-family: $titulos}
+        p {font-family: $parrafo}
         div {
             &.informacion-footer {
                 display: grid;
                 padding: 10px;
                 padding-bottom: 10px;
-                color: #f8f9fa;
+                color: nth($list: $colores, $n:4);
             }
             img {
                 width: 50px;
@@ -40,13 +40,11 @@ footer {
                     justify-items: center;
                     align-items: center;
                         .redes-sociales {
-                            display: grid;
-                            grid-template-columns: repeat(2, 1fr);
+                            @include grid(repeat(2, 1fr), none);
                             height: 50px;
                             }
                         .medios-de-pago{
-                            display: grid;
-                            grid-template-columns: 1fr 1fr 1fr;
+                            @include grid(repeat(3, 1fr), none);
                             gap: 8px;
                         }
                         }
