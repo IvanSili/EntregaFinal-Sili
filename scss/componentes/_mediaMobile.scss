@@ -52,16 +52,16 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
-    div {
+        .informacion-footer {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+        }
+        p {
         display: flex;
         align-items: center;
         justify-items: center;
-        p {
-            display: flex;
-        align-items: center;
-        justify-items: center;
         }
-    }
     a {.logo-empresa-footer {
         display: none;
     }}

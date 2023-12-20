@@ -6,9 +6,21 @@ footer {
     justify-items: center;
     align-items: center;
     font-size: 15px;
+    div {
+        &.informacion-footer {
+            display: grid;
+            padding: 10px;
+            padding-bottom: 10px;
+            color: nth($list: $colores, $n:4);
+                h3 {font-family: $titulos;
+                font-size: 20px;}
+                p {font-family: $parrafo}
+        }
+    }
+
     a {
         .logo-empresa-footer{
-            width: 120px;
+            width: 140px;
             border-radius: 50%; 
             border-style:solid;
             border-width: 5px;
@@ -16,45 +28,36 @@ footer {
             margin: 15px;
         }
     }
-        h1 {font-family: $titulos;}
-        h2 {font-family: $titulos;}
-        h3 {font-family: $titulos;
-            font-size: 20px;}
-        h4 {font-family: $titulos}
-        p {font-family: $parrafo}
-        div {
-            &.informacion-footer {
-                display: grid;
-                padding: 10px;
-                padding-bottom: 10px;
-                color: nth($list: $colores, $n:4);
+
+    div {
+        img {
+            width: 60px;
+            height: 60px;
             }
-            img {
-                width: 50px;
-                height: 50px;
-            }
-                &.ubicacion-imagenes-footer {
+            &.ubicacion-imagenes-footer {
                     display: grid;
                     width: 200px;
                     height: 200px;
                     justify-items: center;
                     align-items: center;
-                        .redes-sociales {
+                    div {
+                        &.redes-sociales {
                             @include grid(repeat(2, 1fr), none);
                             height: 50px;
+                            a {
+                                .imagenes-sociales {                                 
+                                        width: 70px;
+                                        height: 70px;
+                                    }
                             }
+                    }
+                            }
+                            }
+                    div {
                         .medios-de-pago{
                             @include grid(repeat(3, 1fr), none);
                             gap: 8px;
                         }
-                        }
-            div {
-                a {
-                    .imagenes-sociales {
-                        width: 70px;
-                        height: 70px;
                     }
-                }
-            }
-        }
-}
+                        }
+    }

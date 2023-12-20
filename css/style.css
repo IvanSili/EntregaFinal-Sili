@@ -104,7 +104,7 @@ header nav div button.boton-menu:focus {
 header nav div div.menu-derecha {
   flex-grow: 0;
 }
-header nav div div ul.menu-ul li a {
+header nav div div ul.menu-ul li a.nav-link, header nav div div ul.menu-ul ul.fondo-negro li a {
   color: #f8f9fa;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
@@ -112,10 +112,6 @@ header nav div div ul.menu-ul li a {
 header nav div div ul ul.fondo-negro {
   background-color: #1F2421;
 }
-header nav div div ul ul.fondo-negro li a {
-  font-family: "Poppins", sans-serif;
-}
-
 /*MAIN*/
 main {
   background-color: #9cc5a1;
@@ -170,39 +166,30 @@ footer {
   align-items: center;
   font-size: 15px;
 }
-footer a .logo-empresa-footer {
-  width: 120px;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 5px;
-  border-color: #1F2421;
-  margin: 15px;
-}
-footer h1 {
-  font-family: "Poppins", sans-serif;
-}
-footer h2 {
-  font-family: "Poppins", sans-serif;
-}
-footer h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-}
-footer h4 {
-  font-family: "Poppins", sans-serif;
-}
-footer p {
-  font-family: "Roboto", sans-serif;
-}
 footer div.informacion-footer {
   display: grid;
   padding: 10px;
   padding-bottom: 10px;
   color: #f8f9fa;
 }
+footer div.informacion-footer h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+footer div.informacion-footer p {
+  font-family: "Roboto", sans-serif;
+}
+footer a .logo-empresa-footer {
+  width: 140px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #1F2421;
+  margin: 15px;
+}
 footer div img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 footer div.ubicacion-imagenes-footer {
   display: grid;
@@ -211,21 +198,21 @@ footer div.ubicacion-imagenes-footer {
   justify-items: center;
   align-items: center;
 }
-footer div.ubicacion-imagenes-footer .redes-sociales {
+footer div.ubicacion-imagenes-footer div.redes-sociales {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: none;
   height: 50px;
 }
-footer div.ubicacion-imagenes-footer .medios-de-pago {
+footer div.ubicacion-imagenes-footer div.redes-sociales a .imagenes-sociales {
+  width: 70px;
+  height: 70px;
+}
+footer div div .medios-de-pago {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: none;
   gap: 8px;
-}
-footer div div a .imagenes-sociales {
-  width: 70px;
-  height: 70px;
 }
 
 /*MAIN-CONTACTO*/
@@ -371,12 +358,12 @@ main div div.nosotros-texto div p {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
   }
-  footer div {
+  footer .informacion-footer {
     display: flex;
     align-items: center;
     justify-items: center;
   }
-  footer div p {
+  footer p {
     display: flex;
     align-items: center;
     justify-items: center;

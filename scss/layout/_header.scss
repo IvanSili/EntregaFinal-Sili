@@ -31,9 +31,11 @@ header {
                         &.menu-ul {
                                 li {
                                     a {
-                                        color: nth($list: $colores, $n:4);
-                                        font-size: 20px;
-                                        font-family: $titulos;
+                                        &.nav-link {
+                                            color: nth($list: $colores, $n:4);
+                                            font-size: 20px;
+                                            font-family: $titulos;
+                                        }
                                         }
                                     }
                                 }
@@ -42,7 +44,7 @@ header {
                                         background-color: nth($list: $colores, $n: 3);
                                         li {
                                             a {
-                                                font-family: $titulos;
+                                                @extend .nav-link;
                                             }
                                         }
                                     }
