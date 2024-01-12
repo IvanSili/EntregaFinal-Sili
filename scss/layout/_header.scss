@@ -42,6 +42,7 @@ header {
                                 ul {
                                     &.fondo-negro {
                                         background-color: nth($list: $colores, $n: 3);
+                                        --bs-dropdown-link-hover-bg: #226f7074;
                                         li {
                                             a {
                                                 @extend .nav-link;

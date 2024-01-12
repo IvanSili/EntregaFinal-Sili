@@ -22,8 +22,11 @@ main{
                                 display: flex;
                                 justify-content: center;
                                 align-content: end;
+                                align-items: center;
                                 p {
                                     font-family: $titulos;
+                                    padding-top: 10px;
+                                }
                                 }
                                 }
                             }
@@ -52,4 +55,3 @@ main{
                         }   
                     }
         }
-}

@@ -111,6 +111,7 @@ header nav div div ul.menu-ul li a.nav-link, header nav div div ul.menu-ul ul.fo
 }
 header nav div div ul ul.fondo-negro {
   background-color: #1F2421;
+  --bs-dropdown-link-hover-bg: #226f7074;
 }
 /*MAIN*/
 main {
@@ -237,21 +238,23 @@ main div.main-contacto div div.contacto-cards {
   display: flex;
   justify-content: center;
   align-content: end;
+  align-items: center;
 }
 main div.main-contacto div div.contacto-cards p {
   font-family: "Poppins", sans-serif;
+  padding-top: 10px;
 }
-main div.main-contacto div.boton-formulario {
+main div div.boton-formulario {
   display: flex;
   justify-content: end;
   margin-right: 40px;
 }
-main div.main-contacto div.boton-formulario button {
+main div div.boton-formulario button {
   color: #1F2421;
   background-color: #f8f9fa;
   border-color: rgb(159, 159, 159);
 }
-main div.main-contacto div div.contacto-formulario {
+main div div div.contacto-formulario {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -332,6 +335,7 @@ main div div.nosotros-texto div p {
   /*Tamño logo*/
   header nav div a .logo-empresa-header {
     width: 90px;
+    margin-left: 15px;
   }
   /*card*/
   main h1 {
@@ -370,6 +374,10 @@ main div div.nosotros-texto div p {
   }
   footer a .logo-empresa-footer {
     display: none;
+  }
+  /*Boton de whatsapp*/
+  main a .icono-whatsapp {
+    right: 15px;
   }
 }
 

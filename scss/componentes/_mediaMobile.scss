@@ -9,11 +9,14 @@ header {
                 a {
                     .logo-empresa-header{
                         width: 90px;
+                        margin-left: 15px;
                     }
                 }
             }
         }
 }
+
+
 
 /*card*/
 main {
@@ -66,5 +69,15 @@ footer {
         display: none;
     }}
     }
+
+/*Boton de whatsapp*/
+
+main {
+        a {
+            .icono-whatsapp {
+                right: 15px;
+            }
+            }
+        }
 
 }
